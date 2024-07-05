@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    color: aliceblue;
+    text-align: center;
+    background:linear-gradient(rgba(0, 179, 255, 0.067),#000000),url("image/pexels-kate-trysh-281502.jpg");
+    background-size: cover;
+}
+.counter{
+    margin-top:20px;
+    display: flex;
+    gap:20px;
+}
+.box{
+    width: 100px;
+    padding: 10px;
+    backdrop-filter: blur(10px);
+    border: 0.5px solid white;
+    border-radius: 5px;
+
+}
+#newyear{
+    margin-top: 10px;
+    font-size:50px;
+}
+p{
+    font-size: larger;
+}
+@media (max-width:760px) {
+    p{
+        font-size: small;
+    }
+    #newyear{
+        font-size:40px;
+    }
+    .counter{
+        margin-top:20px;
+        display: flex;
+        gap:10px;
+        
+    }
+    .box{
+        width: 50px;
+    
+    
+    }
+}

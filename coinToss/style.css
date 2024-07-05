@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.container{
+    min-width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    background-color: blanchedalmond;
+    padding: 20px;
+    position: relative;
+    margin: 0px 20px;
+}
+h3{
+    display: flex;
+    height: 100%;
+    align-items: end;
+}
+
+#coin{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background:linear-gradient(rgb(231, 231, 231),rgb(111, 111, 111));
+    border-radius:100%;
+    border:10px solid whitesmoke;
+    box-shadow: 5px 10px 5px 0px black;
+    animation: coin 1s  4 linear;
+}
+
+
+h1{
+    display: flex;
+    width: 100%;
+    margin-left: 40px;
+    
+}
+button{
+  all: unset;
+  background-color: brown;
+  padding: 10px 20px;
+  color: aliceblue;
+  cursor: pointer;
+  border-radius: 20px;
+
+}
+.choose{
+    display: grid;
+    place-content: center;
+    height: 100%;
+    font-size: xx-large;
+    color: aliceblue;
+    cursor: pointer;
+}
+#choose{
+    display: grid;
+    place-content: center;
+    height: 100%;
+    font-size: xx-large;
+    color: aliceblue;
+    cursor: pointer;
+    /* animation: rade 0.5s  2 linear; */
+}
+.coin{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background:linear-gradient(rgb(231, 231, 231),rgb(111, 111, 111));
+    border-radius:100%;
+    border:10px solid whitesmoke;
+    box-shadow: 5px 10px 5px 0px black;
+   
+}
+
+@keyframes coin {
+    0%{
+        transform: rotateY(0deg) ;
+        box-shadow: none;
+    }
+    50%{
+        background:none ;
+        background-color: black;
+    }
+    100%{
+        background-color: blanchedalmond;
+            transform: rotateY(360deg);
+    }
+    
+}

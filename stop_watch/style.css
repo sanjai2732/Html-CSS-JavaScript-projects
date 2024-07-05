@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+margin: 20px;
+width: 80%;
+height: 400px;
+background-color: orange;
+display: grid;
+padding: 100px;
+justify-content: center;
+border-radius: 20px;
+
+}
+h2{
+    font-size:60px;
+    color: aliceblue;
+    font-variant: small-caps;
+    text-shadow: 5px 4px 1px black;
+    animation: box 1 5s ease;
+}
+.time{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+span{
+    font-size: 40px;
+    color: aliceblue;
+    margin-top: 40px;
+    text-shadow: 2px 5px 3px black;
+}
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height:100px;
+    align-items: center;
+    margin-top: 10px;
+}
+button{
+    all: unset;
+    margin-right: 20px;
+    border: 2px solid aliceblue;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius:5px;
+    color:aliceblue;
+}
+button:hover{
+    background-color: azure;
+    color:black;
+    box-shadow: 5px 4px 1px black;
+}
+button:focus{
+    background-color: azure;
+    color:black;
+}
+button:last-child{
+    color: black;
+}
+@keyframes box {
+    0%{
+        transform: scale(0) ;
+        
+        
+    }
+    50%{
+        transform: scale(1.5) ;
+    }
+    75%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0) ;
+    }
+    
+}

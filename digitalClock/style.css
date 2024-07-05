@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    background:linear-gradient(rgb(255, 130, 130),rgb(35, 11, 255)) ;
+}
+.container{
+    width:300px;
+    height: 100px;
+    border: 2px solid whitesmoke;
+    display: flex;
+    padding:20px;
+}
+.box{
+    display: flex;
+    background-color: aliceblue;
+    width: 100%;
+    padding: 10px;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    font-family:sans-serif;
+    font-weight: 400;
+}

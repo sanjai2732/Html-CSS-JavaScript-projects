@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <div id="top-contaniner"><p id="arrow"></p></div> -->
+    <div id="container">
+        <input type="text" id="display" placeholder="000000000000">
+        <div id="btn-cantainer">
+            <div id="first" class="row">
+                <div class="btns"><button  onclick="reset('ac')">AC</button></div>
+                <div class="btns"><button  onclick="reset('ac')">clear</button></div>
+                <div class="btns"><button onclick="opt('%')">%</button></div>
+                <div class="btns"><button onclick="opt('/')">/</button></div>
+            </div>
+            <div   id="second" class="row">
+                <div class="btns"><button onclick="number('7')">7</button></div>
+                <div class="btns"><button onclick="number('8')">8</button></div>
+                <div class="btns"><button onclick="number('9')">9</button></div>
+                <div class="btns"><button onclick="opt('*')">X</button></div>
+            </div>
+            <div class="row" id="three">
+                <div class="btns"><button onclick="number('4')">4</button></div>
+                <div class="btns"><button onclick="number('5')">5</button></div>
+                <div class="btns"><button onclick="number('6')">6</button></div>
+                <div class="btns"><button onclick="opt('-')">-</button></div>
+            </div>
+            <div class="row" id="four">
+                <div class="btns"><button onclick="number('1')">1</button></div>
+                <div class="btns"><button onclick="number('2')">2</button></div>
+                <div class="btns"><button onclick="number('3')">3</button></div>
+                <div class="btns"><button onclick="opt('+')">+</button></div>
+            </div>
+            <div class="row" id="five">
+                <div class="btns"><button onclick="closebtn('')">close</button></button></div>
+                <div class="btns"><button onclick="number('0')">0</button></div>
+                <div class="btns"><button onclick="opt('.')">.</button></div>
+                <div class="btns"><button onclick="result('=')">=</button></div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

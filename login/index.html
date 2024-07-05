@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>login</h1>
+        <label for="name">Name</label>
+        <input type="email" id="email" placeholder="Email or phone Number">
+        <div>
+            <span id="Eamil-error">incorrect</span>
+        </div>
+        
+        <label for="password" >Password</label>
+        <input type="password" id="password" placeholder=" Enter Password">
+        <div>
+            <span id="password-error">incorrect</span>
+        </div>
+        <button type="button" id="login">login</button>
+        <a href="#" id="forget">forget password?</a>
+        <button type="button"  id="signup">Create new account</button> 
+    </div>
+    <div class="CreateAccount">
+        <h2>Create new account</h2>
+        <label for="name">Name</label>
+        <input type="email" id="NewEmail" placeholder="email or phone Number">
+        <label for="password" >Create Password</label>
+        <input type="password" id="NewPassword" placeholder=" Create new password">
+        <label for="password" >Confirm Password</label>
+        <input type="password" id="ConfirmPassword" placeholder=" Confirm password">
+        <div>
+            <span id="incorrectPassword">incorrect Password</span>
+        </div>
+        <button type="button"  id="Confirm">Confirm</button> 
+        <a href="#" id="backtologin">back to Login page?</a>
+    </div>
+    <script src="login.js"></script>
+    <script src="createNewAccount.js"></script>
+</body>
+</html>

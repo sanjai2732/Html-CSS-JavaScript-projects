@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+/*color*/
+:root{
+    --main-color:greenyellow;
+    --font-color: white;
+    --link-color:rgb(255, 255, 255);
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-image: url("images/Abstract\ By\ HKStudio\ \(12\).jpg");
+    background-position: bottom;
+    object-fit: cover;
+    position: relative;
+    border-image: fill 0 linear-gradient(#0001,#000);
+    /* background-image:linear-gradient(to top,greenyellow,white); */
+}
+
+
+.container{
+    position: absolute;
+    width: 20rem;
+    height: 25rem;
+    display: grid;
+    padding: 2rem;
+    border-radius: 1rem;
+    backdrop-filter:blur(0.3rem) ;
+    border: 0.5px solid var(--font-color);
+    color:var(--font-color);
+    box-shadow: 6px 5px 10px 5px rgb(31, 31, 31),
+    -0px -0px 0px 2px rgb(255, 255, 255);
+    /* display: none; */
+    /* background-image:linear-gradient(to right, red,yellow); */
+}
+
+
+input,button{
+    padding:5px 10px;
+    border-radius: 0.5rem;
+    margin-bottom: 5px;
+    outline:none;
+    border:2px solid var(--main-color);
+}
+button,label{
+   margin-top: 15px;
+   
+}
+label{
+    margin-bottom: 5px;
+}
+a{
+    margin-top: 15px;
+    text-align:center;
+    color:var(--link-color);
+    font-size: small;
+    text-decoration: underline var(--main-color) ;
+}
+a:hover{
+    color: var(--main-color);
+    text-decoration: underline var(--font-color);
+}
+#signup{
+    background-color:var(--main-color); 
+}
+#login{
+    border:2px solid  var(--font-color);
+    background-color: transparent;
+    color: var(--font-color);
+   
+}
+#login:hover,#signup:hover,#Confirm:hover{
+    box-shadow: 0px 0px 5px 1px var(--font-color);
+}
+#Eamil-error,#password-error{
+    color:var(--link-color);
+    font-size:15px;
+    padding: 5px;
+    margin-left: 3px;
+    margin-top: 5px;
+    display: none;
+
+}
+.CreateAccount{
+    position: absolute;
+    width: 20rem;
+    height: 28rem;
+    display: grid;
+    padding: 2rem;
+    border-radius: 1rem;
+    backdrop-filter:blur(0.3rem) ;
+    border: 0.5px solid var(--font-color);
+    color:var(--font-color);
+    display: none;
+    box-shadow: 5px 5px 5px 5px rgb(31, 31, 31),
+    -0px -0px 0px 2px rgb(255, 255, 255);
+}
+#backtologin{
+    color: var(--font-color);
+}
+h2{
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+#incorrectPassword{
+    font-size: 14px;
+    color: red;
+    display: none;
+}
+#Confirm{
+    background-color: var(--main-color);
+}
+

@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(198, 220, 232);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+.left_container{
+    width: 50%;
+}
+.left_container h4{
+    font-size: 48px;
+    color: rgb(75, 115, 237);
+}
+.left_container p{
+    margin-top: 10px;
+    width: 350px;
+    font-size: larger;
+    color: rgb(71, 71, 71);
+    font-weight: 600;
+    
+}
+/*--------------right container----------*/
+.right_container{
+    display: grid;
+    gap: 10px;
+    width:350px;
+    height:300px;
+    padding: 15px;
+    background-color:white;
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px  rgb(71, 71, 71) , 0px 0px 5px  rgb(113, 113, 113);
+    
+}
+.right_container input,button{
+    border-radius: 5px;
+    border: 1px solid   rgb(194, 194, 194);
+    outline: none;
+}
+.right_container input{
+    padding:0px 10px 0 10px;
+}
+#newAccount{
+    width: 50%;
+    color: aliceblue;
+    background-color: rgb(3, 180, 53);
+    border: 1px solid transparent;
+    margin-left: 25%;
+    font-weight: 600;
+    cursor: pointer;
+}
+#login{
+    color: aliceblue;
+    border: 1px solid transparent;
+    background-color: rgb(75, 115, 237) ;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+h6 a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 12px;
+    color: rgb(61, 95, 196);
+}
+#line{
+    width: 100%;
+    height: 1px;
+    background-color: rgb(194, 194, 194);
+}
+
+#inCoEmail{
+    font-size:10px;
+    position: absolute;
+    margin-top: 38px;
+    color: rgb(255, 0, 0);
+    display: none;
+
+}
+#inCoPassword{
+    font-size:10px;
+    position: absolute;
+    margin-top: 85px;
+    color: rgb(255, 0, 0);
+    display: none;
+}
+#notEnter{
+    font-size: 10px;
+    padding: 0%;
+    text-align: start;
+    margin-left: 10px;
+    color: rgb(255, 0, 0);
+    display: none;
+}
+
+@media (width>1080px) {
+    .left_container h4{
+        font-size: 68px;
+        
+    }
+}
+@media (width<700px) {
+    .left_container p{
+      display: none;   
+    }
+    body{
+        flex-direction: column;
+        text-align: center;
+        border: 1px solid rebeccapurple;
+        
+    }
+    .left_container {
+        border: 1px solid rebeccapurple;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        
+        background-color:rgb(61, 95, 196) ;
+    }
+    .left_container h4{
+        font-size: 40px;
+        color: aliceblue; 
+
+    }
+
+    
+    
+}
