@@ -51,6 +51,7 @@ body{
    position: relative;
    min-width: 100%;
    background-color: var(--bg-col);
+   font-size: 18px;
 }
 /*---------------- navbar------------------- */
 nav{
@@ -59,7 +60,7 @@ nav{
     position:sticky;
     margin-top:var(--mg-top);
     height: 60px;
-    width: 100vw;
+    width: 100%;
     display: flex;
     align-items: center;
     z-index: 1000;
@@ -90,6 +91,9 @@ nav ul li a:hover,.selected{
     font-weight: var(--font-w2);
     margin-left: var(--mg-left);
     color:var(--front-col);
+}
+#menu{
+    display: none;
 }
 /*-------------- hero--------------- */
 header{
@@ -645,8 +649,13 @@ aside h2{
         background-color: var(--bg-col);
         /* backdrop-filter: blur(21px); */
         z-index: 10;
-
-
+    }
+    .mbLogo i{
+        text-align: end;
+        margin-right: 20%;
+    }
+    .mbLogo main{
+        margin-left: 20px;
     }
     /*---------------------service------------------------*/
     #ServicesCard{
@@ -757,6 +766,31 @@ aside h2{
         grid-template-columns:auto ;
         padding: 6rem 4rem 1rem;
     }
+    .lg-nav{
+        display: none;
+        position: absolute;
+        right: 0;
+        z-index: 1000;
+        height: 100%;
+        width:  100%;
+        background-color:var(--nav-bg-col);
+        flex-direction: column;
+        padding: 4rem 0;
+     }
+     #logo{
+         display:none;
+     }
+     .lg-nav ul{
+     flex-direction: column;
+     width: 100%;
+     align-items: center;
+     }
+     .lg-nav ul a{
+         margin-top: var(--mg-top);
+     }
+     .nav_active{
+         display: flex;
+     }
 }
 /*------------------------WhyUs-----------------*/
 .heading3{

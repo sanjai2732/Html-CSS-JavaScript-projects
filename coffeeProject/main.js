@@ -1,14 +1,27 @@
-const inToNavbar=document.querySelector("#inNav")
-const outToNavbar=document.querySelector("#x")
-const mobileNavbar=document.querySelector(".moblie-nav")
-const body=document.querySelector("body")
-const inNav=document.querySelector(".in")
-inToNavbar.addEventListener("click",()=>{
-    mobileNavbar.style.display="flex"
-    inNav.style.display="none"
+document.querySelectorAll(".link").forEach(link=>{
+    link.addEventListener("click",()=>{
+        document.querySelectorAll('.link').forEach(el=>{
+            el.classList.remove('selected')
+        });
+        link.classList.add('selected')
+    })
 })
-outToNavbar.addEventListener("click",()=>{
-    mobileNavbar.style.display="none"
-    inNav.style.display="block"
-    inNav.remove()
+
+
+document.getElementById('meau').addEventListener('click',()=>{
+    document.getElementById('lgNav').classList.toggle('nav_active')
 })
+//     setInterval(function(){
+       
+//     document.querySelectorAll(".link").forEach(link=>{
+//        link.addEventListener('click',()=>{
+//         document.getElementById('lgNav').style.display='none'
+//        })
+//        link.style.display='flex'
+      
+//     })
+    
+// },100)
+
+
+
