@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="head">
+            <input type="text" placeholder="Enter city name" >
+            <img  id="search"src="image/search.png" alt="searchIcon">
+            <p id="error">invaild city name</p>
+        </div>
+        <section>
+            <main>
+                <img  alt="WeatherImage" id="WeatherImage">
+                <h3 id="degree">32 <sup>°</sup>C</h3>
+                <h2 id="city">MADURAI</h2>
+                <p id="in">In</p>
+                <div id="boxs">
+                    <div class="box">
+                        <p  >laptitude</p>
+                        <h5 id="lap-dtn">9.999</h5>
+                    </div>
+                    <div class="box">
+                        <p >longitude</p>
+                        <h5 id="long-dtn">78.0099</h5>
+                    </div>
+                </div>
+            </main>
+            <div id="bottom">
+                <div class="wind">
+                    <img class="bottomImg" src="image/humidity.png" alt="humidity Image">
+                    <h3 id="Humidity_prectage">55%</h3>
+                    <p >Humidity</p>
+                </div>
+                <div class="wind">
+                    <img class="bottomImg" src="image/wind.png" alt="Wind Image">
+                    <h3 id="wind_speed">2.57 Km/h</h3>
+                    <p >Wind Speed</p>
+                </div>
+            </div>
+            <footer><p>Designed by <b>Sanjai guru</b></p></footer>
+        </div>
+        </section>
+    <script src="main.js"></script>
+</body>
+</html>

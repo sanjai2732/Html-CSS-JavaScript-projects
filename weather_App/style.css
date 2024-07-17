@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+:root{
+    --primary-color:rgb(255, 140, 0);
+    --secondary-color:rgb(0, 0, 0);
+    --head-front:rgb(255, 255, 255);
+    --search-box-color:none;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 400px;
+    height: 550px;
+    padding: 1rem;
+    display: grid;
+    justify-content: center;
+    border-radius:2rem;
+    text-align: center;
+}
+input{
+    width: 300px;
+    padding: 1rem;
+    position: relative;
+    border-radius: 2rem;
+    border:0.1rem solid var(--search-box-color);
+    outline: none;
+}
+#head{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#search{
+    position: absolute;
+    right: 2.5rem;
+    width: 25px;
+    top: 2rem;
+    cursor: pointer;
+}
+main{
+    width: 100%;
+    padding: 10px;
+}
+#WeatherImage{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+h3{
+    margin-top: 0.5rem;
+    color: var(--head-front);
+}
+#city{
+    margin-top: 0.5rem;
+    color: var(--head-front);
+    text-transform: uppercase;
+}
+#in{
+    margin-top: 0.5rem;
+    color: var(--head-front);
+}
+#boxs{
+    text-transform: capitalize;
+    color: var(--head-front);
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#boxs h5{
+    margin-top: 0.4rem;
+
+}
+
+.bottomImg{
+    width: 30px;
+}
+#bottom{
+    display: flex;
+    justify-content: space-between;
+    color:var(--secondary-color);
+}
+footer{
+    font-size: small;
+    margin-top: 10px;
+    color: var(--secondary-color);
+}
+b{
+    color: var(--head-front);
+
+}
+#error{
+    display: none;
+    width: 100%;
+    text-align:"start";
+    font-size:12px;
+    margin:5px 0px 0 10px;
+    color:var(--head-front);
+}
+section{
+    background-color: var(--primary-color);
+    padding: 1rem;
+    border-radius:0 0 2rem 2rem;
+    width: 100%;
+    display:none;
+    transition: all ease 0.5s ;
+}
+#head{
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 90px;
+    padding: 20px;
+    border-radius: 1rem ;
+    
+}
